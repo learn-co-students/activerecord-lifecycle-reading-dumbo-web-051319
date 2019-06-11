@@ -26,4 +26,9 @@ class PostsController < ApplicationController
 	def edit
 	  @post = Post.find(params[:id])
 	end
+
+	# # private #
+	# def posts_params
+	# 	params.require(:post).permit(:title, :description, :post_status, :author_id)
+	# end
 end
